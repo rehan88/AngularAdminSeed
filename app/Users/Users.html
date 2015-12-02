@@ -1,0 +1,14 @@
+﻿<toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+
+<h1>{{ vm.title }}</h1>
+
+<p>This grid is implemented using UI Grid</p>
+<md-content>   
+    <section layout="row" layout-sm="column" layout-align="left">
+        <md-button class="md-fab md-primary" aria-label="Use Android" ng-click="vm.showListBottomSheet($event)">
+            <ng-md-icon class="addpersonicon" icon="person_add" style="fill:#fff" size="24"></ng-md-icon>
+        </md-button>        
+    </section> 
+</md-content>
+<br/>
+<div ui-grid="vm.gridOptions" class="myGrid"></div>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="AngularTemplateApplication">
+<head>
+    <title>AngularJS Template</title>
+    <link href="assets/styles/site.css" rel="stylesheet" />
+    <link href="assets/Styles/angular-material.min.css" rel="stylesheet" />
+    <link href="assets/Styles/ui-grid-v3.0.0.css" rel="stylesheet" />
+    <link href="app/Directives/Toaster/toaster.css" rel="stylesheet" />
+
+</head>
+<body layout="column">
+
+    <section ng-include src="'assets/UIControls/TopToolbar/TopToolbar.html'"></section>
+    <div layout="row" flex>
+        <section class="sidenavigation" ng-include src="'assets/UIControls/SideNav/SideNav.html'" layout="vertical"></section>
+        <div layout="column" flex id="content" class="md-padding">
+        <div ng-view></div>        
+        </div>
+    </div>
+    <section ng-include src="'assets/UIControls/Footer/Footer.html'"></section>
+
+    <!-- AngularJS + Angular Material + Angular Material Icons -->
+    <script src="assets/Scripts/angular.min.js"></script>
+    <script src="assets/Scripts/angular-route.min.js"></script>
+    <script src="assets/Scripts/angular-material.min.js"></script>
+    <script src="assets/Scripts/angular-animate.min.js"></script>
+    <script src="assets/Scripts/angular-aria.min.js"></script>
+    <script src="assets/Scripts/ui-grid-v3.0.0.js"></script>
+    <script src="assets/Scripts/angular-material-icons.min.js"></script>
+    <script src="app/Directives/Toaster/toaster.js"></script>
+
+    <!-- Angular modules + routes + controllers -->
+     <script src="assets/app.module.js"></script>
+    <script src="app/Home/home.module.js"></script>
+    <script src="app/Home/home.route.js"></script>
+    <script src="app/Home/homecontroller.js"></script>
+    <script src="app/About/about.module.js"></script>
+    <script src="app/About/about.route.js"></script>
+    <script src="app/About/aboutcontroller.js"></script>
+    <script src="app/Contact/contact.module.js"></script>
+    <script src="app/Contact/contact.route.js"></script>
+    <script src="app/Contact/contactcontroller.js"></script>
+    <script src="app/Help/help.module.js"></script>
+    <script src="app/Help/help.route.js"></script>
+    <script src="app/Help/helpcontroller.js"></script>
+    <script src="app/Users/users.module.js"></script>
+    <script src="app/Users/users.route.js"></script>
+    <script src="app/Users/userscontroller.js"></script>
+
+    <script src="assets/UIControls/TopToolbar/toptoolbarcontroller.js"></script>
+    <script src="assets/UIControls/SideNav/sidenavcontroller.js"></script>
+</body>
+</html>

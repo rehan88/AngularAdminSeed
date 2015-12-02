@@ -1,0 +1,29 @@
+<toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+<h1>{{ vm.title }}</h1>
+<p>{{ vm.introText }}</p>
+
+<md-content layout-padding>
+
+    <br/>
+        <md-content layout-padding class="autoScroll">
+        
+            <md-input-container md-no-float>
+                <ng-md-icon icon="person" style="fill: dodgerblue" size="24"></ng-md-icon>
+                <input ng-model="vm.name" type="text" placeholder="{{ vm.namePlaceholder }}">
+            </md-input-container>
+          
+              <md-input-container md-no-float>
+                <ng-md-icon icon="email" style="fill: green" size="24"></ng-md-icon>
+                <input ng-model="vm.email" type="text" placeholder="{{ vm.emailPlaceholder }}">
+            </md-input-container>
+
+            <md-input-container md-no-float>
+                <ng-md-icon icon="comment" style="fill: black" size="24"></ng-md-icon>
+                <textarea ng-model="vm.comment" placeholder="{{ vm.commentPlaceholder }}" columns="1" md-maxlength="150"></textarea>
+            </md-input-container>
+    
+            </md-content>
+
+    <md-button class="md-raised" ng-click="vm.showConfirm($event)">Submit</md-button>
+
+</md-content>

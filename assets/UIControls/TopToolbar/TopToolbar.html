@@ -1,0 +1,10 @@
+﻿
+<div ng-controller="toptoolbarcontroller as vm">
+    <md-toolbar layout="row">
+        <ng-md-icon class="navIcon" icon="menu" style="fill: #fff" size="64" ng-click="vm.toggleSidenav('left')" hide-gt-sm></ng-md-icon>
+        <h1 class="md-toolbar-tools" layout-align-gt-sm="left left" ng-show="vm.searchIcon">Material Template</h1>
+        <input icon="search" ng-click="searchclick()" placeholder="Search" class=" check-element animate-show topsearchinput" ng-show="vm.searchInput" />
+        <ng-md-icon icon="search" style="fill: white" size="24" class="searchicon" ng-click="vm.searchshowclick()" ng-show="vm.searchIcon"></ng-md-icon>
+    </md-toolbar>
+    <ng-md-icon icon="close" class="hidetopsearch" style="fill: white" size="36" ng-show="vm.searchInput" ng-click="vm.searchhideclick()"></ng-md-icon>
+</div>

@@ -1,0 +1,37 @@
+﻿
+<md-bottom-sheet class="md-list md-has-header">
+    <md-subheader>Add new user</md-subheader>
+    <md-content layout-padding class="autoScroll">
+
+        <md-input-container md-no-float>
+            <ng-md-icon icon="person" style="fill: dodgerblue" size="24"></ng-md-icon>
+            <input ng-model="vm.firstname" type="text" placeholder="Firstname">
+        </md-input-container>
+
+        <md-input-container md-no-float>
+            <ng-md-icon icon="person" style="fill: dodgerblue" size="24"></ng-md-icon>
+            <input ng-model="vm.surname" type="text" placeholder="Surname">
+        </md-input-container>
+
+        <md-input-container md-no-float>
+            <ng-md-icon icon="account_box" style="fill: dodgerblue" size="24"></ng-md-icon>
+            <input ng-model="vm.age" type="text" placeholder="Age">
+        </md-input-container>
+
+        <md-input-container md-no-float>
+            <ng-md-icon icon="business" style="fill: dodgerblue" size="24"></ng-md-icon>
+            <input ng-model="vm.company" type="text" placeholder="Company">
+        </md-input-container>
+
+        <md-input-container md-no-float>
+            <ng-md-icon icon="work" style="fill: dodgerblue" size="24"></ng-md-icon>
+            <md-select ng-model="size" placeholder="Employed">
+                <md-option  value="true">True</md-option>
+                <md-option  value="false">False</md-option>
+            </md-select>
+        </md-input-container>
+
+        <md-button class="md-raised" ng-click="vm.submit()">Submit</md-button>
+
+    </md-content>
+</md-bottom-sheet>

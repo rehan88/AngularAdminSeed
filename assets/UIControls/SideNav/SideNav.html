@@ -1,0 +1,25 @@
+﻿<div ng-controller="sidenavcontroller" class="sidenavigation">
+    <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+        <div class="clear"></div>
+        <md-button ng-class="{'active' : isSelected()}" class="md-button md-default-theme" ng-href="#/">
+            <ng-md-icon icon="home" style="fill: black" size="24"></ng-md-icon>
+            Home
+        </md-button>
+        <md-button class="md-button md-default-theme" ng-selected="selected" ng-href="#/about">
+            <ng-md-icon icon="info" style="fill: #3f51b5" size="24"></ng-md-icon>
+            About
+        </md-button>
+        <md-button class="md-button md-default-theme" ng-href="#/users">
+            <ng-md-icon icon="people" style="fill: rgb(247, 169, 1)" size="24"></ng-md-icon>
+            Users
+        </md-button>
+        <md-button class="md-button md-default-theme" ng-href="#/contact">
+            <ng-md-icon icon="quick_contacts_mail" style="fill: teal" size="24"></ng-md-icon>
+            Contact Us
+        </md-button>
+        <md-button class="md-button md-default-theme" ng-href="#/help">
+            <ng-md-icon icon="help" style="fill: #e50404" size="24"></ng-md-icon>
+            Help
+        </md-button>
+    </md-sidenav>
+</div>
