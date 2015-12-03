@@ -10,8 +10,8 @@ The application stores all scripts locally so no node/bower packages need to be 
 
 ### Node
 1. cd into AngularStarteTemplte
-2. if not already done install http-server bu running "npm install http-server -g" 
-3. in your teminal/console type http-server and hit the enter key. You should be goo to go !
+2. if not already done install http-server by running "npm install http-server -g" 
+3. in your teminal/console type http-server and hit the enter key. You should be good to go !
 
 ### IIS
 1. add new wwebsite
